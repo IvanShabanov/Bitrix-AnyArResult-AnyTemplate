@@ -6,10 +6,14 @@ class anyresult_anytemplate extends CBitrixComponent
 {
 	public function executeComponent ()
 	{
+		$docroot = \Bitrix\Main\Application::getDocumentRoot();
+		$this->arParams['TEMPLATE_PATH'] = $docroot.$this->arParams['TEMPLATE_PATH'];
+
 		if (!is_dir($this->arParams['TEMPLATE_PATH'])) {
 			throw new SystemException('TEMPLATE_PATH '. $this->arParams['TEMPLATE_PATH']. ' not exists');
 			return;
 		};
+
 		if (!is_array($this->arParams['RESULT'])) {
 			throw new SystemException('RESULT is not array');
 			return;
