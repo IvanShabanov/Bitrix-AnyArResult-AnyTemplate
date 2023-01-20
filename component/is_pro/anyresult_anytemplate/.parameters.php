@@ -15,7 +15,7 @@ $arComponentParameters =[
 			'TYPE' => 'CHECKBOX',
 			'DEFAULT' => 'Y'
 		],
-		'INCLUDE_COMPUNENT_EPILOG' => [
+		'INCLUDE_COMPONENT_EPILOG' => [
 			'NAME' => 'Need Include component_epilog.php',
 			'TYPE' => 'CHECKBOX',
 			'DEFAULT' => 'Y'
