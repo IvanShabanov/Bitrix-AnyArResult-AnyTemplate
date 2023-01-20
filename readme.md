@@ -19,7 +19,7 @@
 			"RESULT" => $arResult,
 			/* Путь до используемого шаблона */
 			"TEMPLATE_PATH" => "/bitrix/templates/.default/components/bitrix/news.detail/",
-			/* Включить result_modifier используемого шаблона - может изменить наш %arResult */
+			/* Включить result_modifier используемого шаблона - может изменить наш $arResult */
 			"INCLUDE_RESULT_MODIFIER" => "Y",
 			/* Включить component_epilog.php используемого шаблона */
 			"INCLUDE_COMPONENT_EPILOG" => "Y",
@@ -28,7 +28,7 @@
 			/* Включить style.css используемого шаблона */
 			"ADD_CSS" => "Y",
 
-			/* Можно добавить параметры использемого шаблона */
+			/* Можно добавить параметры используемого шаблона */
 		),
 		$component
 	);
