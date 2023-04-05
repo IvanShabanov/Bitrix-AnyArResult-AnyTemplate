@@ -19,11 +19,11 @@ class anyresult_anytemplate extends CBitrixComponent
 			return;
 		};
 		if ($this->arParams['ADD_JS'] == 'Y') {
-			$file = str_replace('//', '/', $this->arParams['TEMPLATE_PATH'].'/script.js');
+			$file = str_replace('//', '/', '/'.str_replace($docroot, '', $this->arParams['TEMPLATE_PATH']).'script.js');
 			Asset::getInstance()->addJs($file);
 		}
 		if ($this->arParams['ADD_CSS'] == 'Y') {
-			$file = str_replace('//', '/', $this->arParams['TEMPLATE_PATH'].'/style.css');
+			$file = str_replace('//', '/', '/'.str_replace($docroot, '', $this->arParams['TEMPLATE_PATH']).'style.css');
 			Asset::getInstance()->addCss($file);
 		}
         $this->arResult = $this->arParams['RESULT'];
